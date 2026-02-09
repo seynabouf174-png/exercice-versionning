@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{ int n,N,i,cpt1,somme;
+{ int n,N,i,cpt1,cpt2,somme;
     do {
     printf("entrer le nombre d'entier que vous voulez saisir:");
     scanf("%d", &n);
@@ -20,6 +20,11 @@ int main()
         somme=somme+N;
       }
   }
+  if(N%2!=0){
+        cpt2++;
+      }
+
+  printf("le nombre d'entiers impairs est:%d\n", cpt2);
   printf("la moyenne des entiers pairs est:%d\n", somme/cpt1);
 
   return 0;
